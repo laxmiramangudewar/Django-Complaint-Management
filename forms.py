@@ -48,7 +48,7 @@ class UserRegisterForm(UserCreationForm):
         fields = ('bio', 'location',)'''
     
 class ProfileUpdateForm(forms.ModelForm):
-    email =forms.EmailField(widget = forms.TextInput(attrs={'readonly':'readonly'}))
+    email=forms.EmailField(widget = forms.TextInput(attrs={'readonly':'readonly'}))
     first_name=forms.CharField( max_length=30, required=True)
     last_name=forms.CharField( max_length=30, required=True)
 
@@ -76,7 +76,7 @@ class ProfileUpdateForm(forms.ModelForm):
 
 class UserProfileUpdateform(forms.ModelForm):
     
-    collegename =forms.CharField(widget = forms.TextInput(attrs={'readonly':'readonly'}))
+    collegename = forms.CharField(widget = forms.TextInput(attrs={'readonly':'readonly'}))
     Branch=forms.CharField(widget = forms.TextInput(attrs={'readonly':'readonly'}))
 
     class Meta:
