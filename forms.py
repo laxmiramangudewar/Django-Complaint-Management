@@ -91,4 +91,3 @@ class statusupdate(forms.ModelForm):
             'status': None,
           
         } 
-print("You're logged in")
