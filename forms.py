@@ -90,4 +90,5 @@ class statusupdate(forms.ModelForm):
         help_texts = {
             'status': None,
           
-        }      
+        } 
+print("You're logged in")
